@@ -1,65 +1,94 @@
-Space Invaders
-A simple Space Invaders game implemented using Pygame. The player controls a spaceship to shoot down waves of aliens and achieve the highest score possible.
+# Space Invaders
 
-Features
-Player-controlled spaceship that can move left and right and shoot bullets.
-Multiple waves of aliens that move and shoot back at the player.
-Health system for the player's spaceship.
-Score system that rewards the player for shooting down aliens.
-Explosions and sound effects to enhance gameplay experience.
-Username input to track high scores.
-Leaderboard to display top scores.
-Background music playing during the game.
-Prerequisites
-Python 3.x
-Pygame library
-Installation
-Ensure you have Python 3.x installed.
-Install Pygame library if you haven't already:
-sh
-Copy code
-pip install pygame
-Clone or download this repository.
-Ensure the following images and sounds are in the img directory:
-bg.png (background image)
-spaceship.png (spaceship image)
-bullet.png (bullet image)
-alien1.png, alien2.png, alien3.png, alien4.png, alien5.png (alien images)
-alien_bullet.png (alien bullet image)
-exp1.png, exp2.png, exp3.png, exp4.png, exp5.png (explosion images)
-explosion.wav, explosion2.wav, laser.wav (sound effects)
-stranger_things.mp3 (background music)
-How to Play
-Run the game:
-sh
-Copy code
-python space_invaders.py
-Enter your username when prompted and press Enter.
-Use the left and right arrow keys to move the spaceship.
-Press the spacebar to shoot bullets.
-Destroy all aliens to win and avoid getting hit by alien bullets.
-When the game is over, you can choose to play again, quit, or view the leaderboard.
-Code Breakdown
-Game Initialization
-Import necessary modules and libraries.
-Initialize Pygame and Pygame mixer.
-Define screen dimensions, fonts, colors, and load images and sounds.
-Main Game Classes
-Spaceship: Handles player spaceship's movement, shooting, and health.
-Bullets: Handles player bullets and collision with aliens.
-Aliens: Handles alien movement.
-Alien_Bullets: Handles alien bullets and collision with player spaceship.
-Explosion: Handles explosion animations.
-Game Logic
-Create sprite groups for spaceship, bullets, aliens, and explosions.
-Generate aliens and handle their movement and shooting.
-Update and draw all sprites.
-Handle player input for movement and shooting.
-Check collisions between bullets and aliens, and between alien bullets and the spaceship.
-Display score and health on the screen.
-Save and load high scores to a text file.
-Display leaderboard and allow replaying the game.
-Additional Features
-Background music plays during the game.
-Username input at the beginning to track high scores.
-Leaderboard displays top scores with username and score.
+Space Invaders is a classic arcade game built with Pygame, where players control a spaceship to defeat waves of aliens and achieve the highest score possible.
+
+## Features
+
+- **Player-controlled spaceship** that can move left and right and shoot bullets.
+- **Multiple waves of aliens** that move and shoot back at the player.
+- **Health system** for the player's spaceship.
+- **Score system** that rewards the player for shooting down aliens.
+- **Explosions and sound effects** to enhance gameplay experience.
+- **Username input** to track high scores.
+- **Leaderboard** to display top scores.
+- **Background music** playing during the game.
+
+## Prerequisites
+
+- Python 3.x
+- Pygame library
+
+## Installation
+
+To run the game, follow these steps:
+
+1. **Python Installation:**
+   - Ensure you have Python 3.x installed on your system.
+
+2. **Pygame Installation:**
+   - Install the Pygame library if you haven't already:
+     ```sh
+     pip install pygame
+     ```
+
+3. **Clone the Repository:**
+   - Clone or download this repository to your local machine:
+     ```sh
+     git clone https://github.com/AneeshLokray/Space_Invaders.git
+     cd Space_Invaders
+     ```
+
+4. **Ensure Required Assets:**
+   - Make sure the following images and sounds are in the `img` directory within the game's folder:
+     - `bg.png`: Background image
+     - `spaceship.png`: Spaceship image
+     - `bullet.png`: Player bullet image
+     - `alien1.png`, `alien2.png`, `alien3.png`, `alien4.png`, `alien5.png`: Alien images
+     - `alien_bullet.png`: Alien bullet image
+     - `exp1.png`, `exp2.png`, `exp3.png`, `exp4.png`, `exp5.png`: Explosion images
+     - `explosion.wav`, `explosion2.wav`, `laser.wav`: Sound effects
+     - `stranger_things.mp3`: Background music
+
+## How to Play
+
+1. **Run the Game:**
+   - Open a terminal or command prompt.
+   - Navigate to the `Space_Invaders` directory.
+   - Start the game by running:
+     ```sh
+     python Space_Invaders.py
+     ```
+
+2. **Game Controls:**
+   - Use the **left** and **right arrow keys** to move the spaceship.
+   - Press the **spacebar** to shoot bullets from the spaceship.
+
+3. **Objective:**
+   - Destroy all aliens to win the game.
+   - Avoid getting hit by alien bullets.
+
+4. **Game Over:**
+   - The game ends when all aliens are destroyed (win) or the spaceship's health is depleted (lose).
+
+5. **Options After Game Over:**
+   - You can choose to **play again**, **quit**, or **view the leaderboard**.
+
+## Code Breakdown
+
+### Game Components
+
+- **Spaceship Class:** Handles player spaceship movement, shooting bullets, and health management.
+- **Bullets Class:** Manages player bullets and detects collisions with aliens.
+- **Aliens Class:** Controls alien behavior, including movement patterns.
+- **Alien_Bullets Class:** Manages bullets fired by aliens and detects collisions with the player spaceship.
+- **Explosion Class:** Animates explosion effects when objects are destroyed.
+
+### Additional Features
+
+- **Background Music:** Continuous playback of background music during gameplay.
+- **Username Input:** Input prompt at the start to enter a username for tracking high scores.
+- **Leaderboard:** Displays top scores with usernames, saved in a text file.
+
+---
+
+Enjoy playing Space Invaders and aim for the high score! 🚀👾
